@@ -16,5 +16,5 @@ yarn add @fs-fns/reverse-geocode axios
 import { getAddressByLocation } from "@fs-fns/reverse-geocode";
 
 // new york location
-getAddressByLocation(-2.92887, -44.9357).then(console.log);
+getAddressByLocation(40.7148652, -74.1014854).then(console.log);
 ```
