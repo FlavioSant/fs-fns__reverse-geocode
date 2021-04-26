@@ -1,0 +1,11 @@
+{
+  "name": "fs-fns__reverse-geocode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FlavioSant/fs-fns__reverse-geocode.git",
+  "author": "Flavio Santos <flavio.santos@allcomsistemas.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
