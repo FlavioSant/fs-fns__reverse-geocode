@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": "https://github.com/FlavioSant/fs-fns__reverse-geocode.git",
-  "author": "Flavio Santos <flavio.santos@allcomsistemas.com.br>",
+  "author": "Flavio Santos <flaviohenrique_santos@hotmail.com>",
   "license": "MIT",
   "files": [
     "lib/**/*"
