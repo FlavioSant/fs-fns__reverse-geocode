@@ -11,7 +11,8 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true
+    "declaration": true,
+    "moduleResolution": "node"
   },
   "include": ["src"],
   "exclude": ["node_modules", "lib", "test"]

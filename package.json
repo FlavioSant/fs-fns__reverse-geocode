@@ -6,22 +6,28 @@
   "repository": "https://github.com/FlavioSant/fs-fns__reverse-geocode.git",
   "author": "Flavio Santos <flavio.santos@allcomsistemas.com.br>",
   "license": "MIT",
-  "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "@types/node-fetch": "^2.5.10",
-    "jest": "^26.6.3",
-    "node-fetch": "^2.6.1",
-    "ts-jest": "^26.5.5",
-    "typescript": "^4.2.4"
-  },
   "files": [
     "lib/**/*"
   ],
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.5",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "axios": "^0.21.1"
+  },
   "scripts": {
     "build": "tsc",
     "coverage": "jest --coverage",
     "prepublishOnly": "yarn build",
     "test": "jest",
     "watch": "jest --watch"
-  }
+  },
+  "keywords": [
+    "geolocation",
+    "cep"
+  ]
 }
