@@ -1,8 +1,8 @@
 # @fs-fns/reverse-geocode
 
-Async reverse-geocode file
+Async reverse-geocode function
 
-- getAddressByLocation `async (lat: number, lon: number) => Record<string, any>`
+- getAddressByLocation `(lat: number, lon: number) => Record<string, any>`
 
 ## Install
 
