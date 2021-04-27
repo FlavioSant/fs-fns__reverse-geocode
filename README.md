@@ -7,7 +7,7 @@ Async reverse-geocode function
 ## Install
 
 ```sh
-yarn add @fs-fns/reverse-geocode axios
+yarn add @fs-fns/reverse-geocode
 ```
 
 ## Usage
