@@ -1,3 +1,4 @@
+import fetch from "node-fetch";
 import { getAddressByLocation } from "../src";
 
 describe("reverseGeocode", () => {
@@ -32,8 +33,31 @@ describe("reverseGeocode", () => {
   };
 
   it("getAddressByLocation", async () => {
-    expect.assertions(1);
-    const location = await getAddressByLocation(lat, lon);
-    expect(location).toEqual(expected);
+    expect.assertions(3);
+
+    // setup global fetch
+    const _ = global.fetch;
+    try {
+      // catch response headers
+      let headers: any;
+      global.fetch = (async (url: any, ...args: any[]) => {
+        const response = await fetch(url, ...args);
+        headers = response.headers;
+        return Promise.resolve(response);
+      }) as any;
+
+      // location object
+      const location = await getAddressByLocation(lat, lon);
+
+      // check cors
+      expect(headers.get("access-control-allow-origin")).toEqual("*");
+      expect(headers.get("access-control-allow-methods")).toContain("GET");
+
+      // check location
+      expect(location).toEqual(expected);
+    } finally {
+      // fix global fetch
+      global.fetch = _;
+    }
   });
 });
